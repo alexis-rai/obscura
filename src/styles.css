@@ -1,0 +1,132 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-emerald: var(--emerald);
+  --color-emerald-foreground: var(--emerald-foreground);
+  --color-cyan: var(--cyan);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+
+  --font-display: "Space Grotesk", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Dark by default - cybersecurity premium */
+  --background: oklch(0.16 0.025 250);
+  --foreground: oklch(0.97 0.005 250);
+
+  --surface: oklch(0.20 0.028 250);
+  --surface-elevated: oklch(0.24 0.030 250);
+
+  --card: oklch(0.20 0.028 250);
+  --card-foreground: oklch(0.97 0.005 250);
+  --popover: oklch(0.22 0.028 250);
+  --popover-foreground: oklch(0.97 0.005 250);
+
+  --primary: oklch(0.78 0.17 175);
+  --primary-foreground: oklch(0.15 0.03 200);
+
+  --emerald: oklch(0.74 0.18 158);
+  --emerald-foreground: oklch(0.15 0.03 158);
+  --cyan: oklch(0.80 0.15 200);
+
+  --secondary: oklch(0.28 0.035 250);
+  --secondary-foreground: oklch(0.97 0.005 250);
+  --muted: oklch(0.26 0.030 250);
+  --muted-foreground: oklch(0.70 0.025 250);
+  --accent: oklch(0.30 0.045 200);
+  --accent-foreground: oklch(0.97 0.005 250);
+  --destructive: oklch(0.65 0.22 25);
+  --destructive-foreground: oklch(0.98 0.005 250);
+  --border: oklch(0.30 0.030 250);
+  --input: oklch(0.26 0.030 250);
+  --ring: oklch(0.78 0.17 175);
+
+  --chart-1: oklch(0.78 0.17 175);
+  --chart-2: oklch(0.74 0.18 158);
+  --chart-3: oklch(0.80 0.15 200);
+  --chart-4: oklch(0.65 0.18 250);
+  --chart-5: oklch(0.70 0.20 280);
+
+  --gradient-hero: radial-gradient(ellipse at top, oklch(0.30 0.10 180 / 0.4), transparent 60%);
+  --gradient-primary: linear-gradient(135deg, oklch(0.78 0.17 175), oklch(0.74 0.18 158));
+  --gradient-border: linear-gradient(135deg, oklch(0.78 0.17 175 / 0.5), oklch(0.74 0.18 158 / 0.2));
+  --shadow-glow: 0 0 40px -8px oklch(0.78 0.17 175 / 0.4);
+  --shadow-emerald: 0 0 30px -8px oklch(0.74 0.18 158 / 0.5);
+  --shadow-elegant: 0 20px 60px -20px oklch(0.10 0.02 250 / 0.6);
+}
+
+.dark {
+  /* Same tokens - app is dark-first */
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+  html {
+    color-scheme: dark;
+  }
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, oklch(0.30 0.10 180 / 0.25), transparent),
+      radial-gradient(ellipse 60% 40% at 80% 90%, oklch(0.30 0.10 158 / 0.15), transparent);
+    background-attachment: fixed;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility glass-card {
+  background: color-mix(in oklab, var(--surface) 70%, transparent);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+}
+
+@utility gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+
+

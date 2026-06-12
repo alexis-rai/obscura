@@ -1,0 +1,461 @@
+{
+  "common": {
+    "getStarted": "Commencer",
+    "login": "Connexion",
+    "logout": "Déconnexion",
+    "dashboard": "Tableau de bord",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
+    "privacy": "Confidentialité",
+    "terms": "CGU",
+    "contact": "Contact",
+    "loading": "Chargement...",
+    "save": "Enregistrer",
+    "saving": "Enregistrement...",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "deleting": "Suppression...",
+    "or": "ou"
+  },
+  "hero": {
+    "badge": "Evitez de partager vos données",
+    "title": "Utilisez la puissance de l'IA",
+    "titleHighlight": "sans offrir vos données privées.",
+    "description": "Obscura intercepte vos prompts avant l'envoi, masque automatiquement emails, noms, numéros et données confidentielles, puis restaure le tout dans la réponse — en toute transparence.",
+    "installExtension": "Installer l'extension",
+    "tryNow": "Essayer maintenant"
+  },
+  "demo": {
+    "youType": "Vous tapez",
+    "aiReceives": "L'IA reçoit",
+    "protectedBy": "chat.openai.com — protégé par Obscura",
+    "prompt": "Envoie un récap à",
+    "prompt2": "sur le projet de"
+  },
+  "trust": {
+    "encryption": "Chiffrement bout-en-bout",
+    "servers": "Serveurs européens",
+    "gdpr": "RGPD compatible",
+    "multiModel": "Multi-modèles IA"
+  },
+  "howItWorks": {
+    "badge": "Comment ça marche",
+    "title": "Un bouclier invisible en deux temps",
+    "description": "L'extension agit avant et après chaque requête. Vous ne voyez rien — sauf la bordure verte qui confirme la protection.",
+    "step1Badge": "Étape Aller",
+    "step1Title": "Anonymisation instantanée",
+    "step1Text": "Dès que vous cliquez sur Envoyer, l'extension intercepte le prompt. Une requête API sécurisée remplace chaque donnée sensible par une balise — [EMAIL_1], [NOM_1], [TEL_1] — puis injecte le texte masqué dans l'IA avec la mention [SHIELD_PROCESSED].",
+    "step2Badge": "Étape Retour",
+    "step2Title": "Restauration transparente",
+    "step2Text": "Pendant que l'IA répond en streaming, un MutationObserver avec debounce analyse chaque bloc. Notre API restaure les vraies données à l'écran — même si l'IA n'a pas répété la balise exacte. Le message est verrouillé en data-shield-state=\"done\".",
+    "restoredResponse": "Réponse de l'IA, restaurée :",
+    "restoredText": "« Bonjour, j'ai préparé le récapitulatif pour",
+    "restoredText2": "concernant le dossier de",
+    "greenBorder": "Bordure verte : votre prompt a été chiffré, traité et restauré localement."
+  },
+  "features": {
+    "latencyTitle": "Latence < 80ms",
+    "latencyText": "L'utilisateur ne perçoit aucun délai entre la frappe et l'envoi.",
+    "piiTitle": "12+ types de PII",
+    "piiText": "Emails, noms, téléphones, IBAN, adresses, numéros de sécu, identifiants internes.",
+    "auditTitle": "Audit complet",
+    "auditText": "Chaque interception est journalisée pour vos DPO et équipes conformité."
+  },
+  "pricing": {
+    "badge": "Tarification",
+    "title": "Une offre simple, sans engagement",
+    "description": "Activez ou désactivez à tout moment. Aucun frais caché.",
+    "monthly": "Mensuel",
+    "annually": "Annuel · -20%",
+    "perMonth": "/mois TTC",
+    "billedMonthly": "Facturé mensuellement · Sans engagement",
+    "billedAnnually": "Soit 47,40€ payé annuellement · Économisez 11,40€/an",
+    "subscribeMonthly": "S'abonner — 4,90€/mois",
+    "subscribeAnnually": "S'abonner — 47,40€/an",
+    "securePayment": "Paiement sécurisé via Stripe · Résiliable en 1 clic",
+    "features": {
+      "unlimited": "Extension Chrome illimitée",
+      "realtime": "Anonymisation temps réel sur ChatGPT, Gemini, Claude",
+      "autoRestore": "Restauration automatique des réponses",
+      "dashboard": "Tableau de bord & statistiques"
+    }
+  },
+  "footer": {
+    "tagline": "Protégez vos prompts, gardez le contrôle."
+  },
+  "auth": {
+    "welcomeBack": "Bon retour",
+    "createAccount": "Créer un compte",
+    "activateShield": "Activez votre bouclier",
+    "loginDescription": "Connectez-vous à votre tableau de bord Obscura",
+    "signupDescription": "Quelques secondes pour sécuriser vos prompts IA",
+    "checkoutDescription": "Dernière étape : confirmer votre abonnement à 4,90€ TTC",
+    "continueGoogle": "Continuer avec Google",
+    "continueGithub": "Continuer avec GitHub",
+    "connecting": "Connexion...",
+    "email": "Email",
+    "emailPlaceholder": "vous@entreprise.com",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "••••••••",
+    "signIn": "Se connecter",
+    "continue": "Continuer",
+    "pleaseWait": "Patientez...",
+    "noAccount": "Pas encore de compte ? S'inscrire",
+    "hasAccount": "Déjà inscrit ? Se connecter",
+    "verifyEmail": "Vérifiez votre email",
+    "otpDescription": "Nous avons envoyé un code à 6 chiffres à {{email}}",
+    "verifyCode": "Vérifier",
+    "resendCode": "Renvoyer le code",
+    "invalidCode": "Code invalide. Veuillez réessayer.",
+    "checkEmail": "Vérifiez votre email pour confirmer votre compte.",
+    "checkEmailDescription": "Nous avons envoyé un lien de confirmation à {{email}}",
+    "checkEmailInstruction": "Cliquez sur le lien dans l'email pour confirmer votre adresse et activer votre compte.",
+    "emailConfirmed": "Adresse email vérifiée",
+    "emailConfirmedDescription": "Votre adresse email a bien été vérifiée. Votre compte est actif.",
+    "goToDashboard": "Accéder au tableau de bord",
+    "invalidCredentials": "Identifiants incorrects.",
+    "googleFailed": "Échec de la connexion Google",
+    "githubFailed": "Échec de la connexion GitHub",
+    "noAccountOAuth": "Aucun compte n'est associé à cette adresse. Veuillez d'abord créer un compte.",
+    "goToSignup": "Créer un compte",
+    "activateSubscription": "Activer mon abonnement",
+    "processing": "Traitement...",
+    "acceptTerms": "J'accepte les <terms>Conditions Générales d'Utilisation</terms> et la <privacy>Politique de Confidentialité</privacy>",
+    "oauthAcceptTerms": "En continuant avec Google ou GitHub, vous acceptez automatiquement les <terms>CGU</terms> et la <privacy>Politique de Confidentialité</privacy>.",
+    "simulatedPayment": "Paiement simulé · Aucune carte requise en démo"
+  },
+  "dashboard": {
+    "hello": "Bonjour",
+    "title": "Tableau de bord",
+    "activeSubscriber": "Actif",
+    "inactiveSubscription": "Abonnement inactif · Activer",
+    "loadingProfile": "Chargement de votre profil...",
+    "serverStatus": {
+      "title": "Statut serveur",
+      "subtitle": "Anonymisation API",
+      "availability": "Disponibilité",
+      "latency": "Latence moyenne",
+      "region": "Région",
+      "regionValue": "Paris (EU)",
+      "status": "État",
+      "operational": "Opérationnel"
+    },
+    "stats": {
+      "securedPrompts": "Prompts sécurisés",
+      "thisWeek": "cette semaine",
+      "piiIntercepted": "Données PII interceptées",
+      "piiTypes": "emails, noms, téléphones...",
+      "avgMasking": "Temps de réponse moyen",
+      "invisible": "invisible pour l'utilisateur",
+      "extensionEncrypts": "Extension Chrome",
+      "extensionSub": "chiffrements via l'extension",
+      "protectionChart": "Courbe de protection",
+      "promptsProtected": "données cryptées",
+      "dataEncrypted": "données cryptées",
+      "week": "Semaine",
+      "month": "Mois",
+      "prompts": "prompts"
+    },
+    "days": {
+      "sun": "Dim",
+      "mon": "Lun",
+      "tue": "Mar",
+      "wed": "Mer",
+      "thu": "Jeu",
+      "fri": "Ven",
+      "sat": "Sam"
+    },
+    "months": {
+      "jan": "Jan",
+      "feb": "Fév",
+      "mar": "Mar",
+      "apr": "Avr",
+      "may": "Mai",
+      "jun": "Juin",
+      "jul": "Juil",
+      "aug": "Août",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Déc"
+    },
+    "settings": {
+      "title": "Paramètres du compte",
+      "fullName": "Nom complet",
+      "fullNamePlaceholder": "Votre nom",
+      "savedSuccess": "Modifications enregistrées",
+      "emailConfirmation": "Un email de confirmation a été envoyé à votre nouvelle adresse",
+      "emailError": "Erreur lors du changement d'email",
+      "passwordSection": "Modifier le mot de passe",
+      "currentPassword": "Mot de passe actuel",
+      "newPassword": "Nouveau mot de passe",
+      "confirmPassword": "Confirmer le nouveau mot de passe",
+      "changePassword": "Modifier le mot de passe",
+      "passwordSuccess": "Mot de passe modifié avec succès",
+      "passwordError": "Erreur lors du changement de mot de passe",
+      "passwordMismatch": "Les mots de passe ne correspondent pas",
+      "passwordTooShort": "Le mot de passe doit contenir au moins 6 caractères",
+      "deleteAccount": "Supprimer le compte",
+      "deleteWarning": "Cette action est irréversible. Toutes vos données seront supprimées.",
+      "deleteButton": "Supprimer mon compte"
+    },
+    "deleteModal": {
+      "title": "Supprimer votre compte ?",
+      "description": "Cette action est irréversible. Toutes vos données, statistiques et informations seront définitivement supprimées."
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Page non trouvée",
+    "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "goHome": "Retour à l'accueil"
+  },
+  "error": {
+    "title": "Cette page n'a pas pu charger",
+    "description": "Une erreur s'est produite de notre côté. Vous pouvez essayer de rafraîchir ou retourner à l'accueil.",
+    "tryAgain": "Réessayer",
+    "goHome": "Retour à l'accueil"
+  },
+  "admin": {
+    "title": "Administration",
+    "subtitle": "Gestion des utilisateurs Obscura",
+    "usersTitle": "Utilisateurs",
+    "usersCount": "utilisateurs",
+    "encryptions": "chiffrements",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "activate": "Activer l'abonnement",
+    "deactivate": "Désactiver l'abonnement",
+    "deleteUser": "Supprimer l'utilisateur",
+    "deleteModal": {
+      "title": "Supprimer cet utilisateur ?",
+      "description": "Le compte de {{email}} sera définitivement supprimé avec toutes ses données."
+    }
+  },
+  "terms": {
+    "title": "Conditions Générales d'Utilisation",
+    "description": "Les présentes Conditions Générales d'Utilisation (ci-après « CGU ») régissent l'ensemble des relations entre la société Obscura (ci-après « l'Éditeur », « Nous », « Notre ») et toute personne physique ou morale (ci-après « l'Utilisateur », « Vous », « Votre ») accédant au service Obscura. En accédant au service ou en créant un compte, vous reconnaissez avoir lu, compris et accepté sans réserve l'intégralité des présentes CGU.",
+    "lastUpdated": "Dernière mise à jour : 12 juin 2026",
+    "articles": [
+      {
+        "title": "Définitions",
+        "paragraphs": [
+          "« Service » désigne l'ensemble des fonctionnalités proposées par Obscura, comprenant sans s'y limiter l'extension navigateur Chrome, l'interface de programmation applicative (API), le tableau de bord utilisateur, ainsi que tout logiciel, documentation, mise à jour ou correctif associé mis à disposition par l'Éditeur.",
+          "« Données Personnelles » désigne toute information se rapportant à une personne physique identifiée ou identifiable, au sens de l'article 4 du Règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 (RGPD), notamment les noms, prénoms, adresses email, numéros de téléphone, numéros IBAN, adresses postales, numéros de sécurité sociale et tout autre identifiant direct ou indirect.",
+          "« Anonymisation » désigne le processus technique par lequel les Données Personnelles contenues dans un prompt sont détectées, extraites et remplacées par des balises pseudonymisées (telles que [EMAIL_1], [NOM_1], [TEL_1]) avant leur transmission à un service d'intelligence artificielle tiers.",
+          "« Prompt » désigne tout texte, instruction, question ou commande saisi par l'Utilisateur et destiné à être transmis à un modèle d'intelligence artificielle via une plateforme compatible avec le Service.",
+          "« Plateforme Compatible » désigne tout service d'intelligence artificielle tiers avec lequel le Service est techniquement compatible au moment de l'utilisation, incluant notamment mais sans s'y limiter ChatGPT (OpenAI), Gemini (Google), Claude (Anthropic) et toute autre plateforme que l'Éditeur pourrait intégrer ultérieurement.",
+          "« Compte Utilisateur » désigne l'espace personnel créé par l'Utilisateur lors de son inscription, lui permettant d'accéder au Service, de gérer son abonnement et de consulter ses statistiques d'utilisation.",
+          "« Contenu Utilisateur » désigne l'ensemble des données, textes, prompts et informations transmis par l'Utilisateur via le Service, à l'exclusion des Données Personnelles qui font l'objet d'un traitement d'anonymisation."
+        ]
+      },
+      {
+        "title": "Objet et champ d'application",
+        "paragraphs": [
+          "Les présentes CGU ont pour objet de définir les modalités et conditions dans lesquelles l'Éditeur met à disposition de l'Utilisateur le Service Obscura, ainsi que les droits et obligations respectifs des parties dans le cadre de l'utilisation dudit Service.",
+          "Les présentes CGU s'appliquent à tout accès et toute utilisation du Service, quels que soient le terminal, le navigateur ou le système d'exploitation utilisé. Elles s'appliquent également à toute version future du Service, sauf mention contraire explicite accompagnant ladite version.",
+          "L'Éditeur se réserve le droit de modifier les présentes CGU à tout moment. Les modifications entreront en vigueur dès leur publication sur le site. L'Utilisateur sera informé de toute modification substantielle par email à l'adresse associée à son Compte Utilisateur. La poursuite de l'utilisation du Service après notification vaut acceptation des CGU modifiées. En cas de désaccord avec les modifications, l'Utilisateur dispose de la faculté de résilier son abonnement conformément à l'Article 9 des présentes.",
+          "Les présentes CGU prévalent sur toute autre condition générale ou particulière non expressément agréée par l'Éditeur. Le fait que l'Éditeur ne se prévale pas à un moment donné de l'une quelconque des dispositions des présentes CGU ne pourra être interprété comme valant renonciation à se prévaloir ultérieurement de l'une quelconque desdites dispositions."
+        ]
+      },
+      {
+        "title": "Description du Service",
+        "paragraphs": [
+          "Le Service Obscura est une solution technique d'anonymisation des données personnelles intégrée aux plateformes d'intelligence artificielle sous forme d'extension navigateur. Le Service a pour finalité de permettre à l'Utilisateur d'interagir avec des modèles d'intelligence artificielle tiers sans que ses Données Personnelles ou celles de tiers ne soient transmises auxdits modèles.",
+          "Le processus d'anonymisation fonctionne selon le mécanisme suivant : (a) lorsque l'Utilisateur soumet un Prompt sur une Plateforme Compatible, l'extension intercepte ledit Prompt avant sa transmission ; (b) le Prompt est analysé en temps réel par notre API sécurisée afin d'identifier les Données Personnelles qu'il contient ; (c) chaque Donnée Personnelle identifiée est remplacée par une balise pseudonymisée unique ; (d) le Prompt anonymisé est transmis à la Plateforme Compatible ; (e) lors de la réception de la réponse de l'intelligence artificielle, les balises sont automatiquement remplacées par les Données Personnelles originales avant affichage à l'Utilisateur.",
+          "Le Service inclut également : un tableau de bord permettant à l'Utilisateur de consulter ses statistiques d'utilisation (nombre de prompts protégés, types de données interceptées, historique d'activité) ; un système d'indicateur visuel (bordure verte) confirmant le traitement réussi de chaque prompt ; la détection de plus de douze catégories de données personnelles identifiables ; un temps de traitement inférieur à 80 millisecondes dans des conditions normales d'utilisation.",
+          "L'Éditeur s'efforce d'assurer la disponibilité du Service 24 heures sur 24, 7 jours sur 7, sous réserve des opérations de maintenance nécessaires au bon fonctionnement du Service. L'Éditeur ne saurait être tenu à une obligation de résultat quant à la disponibilité ininterrompue du Service. En cas de maintenance programmée susceptible d'affecter la disponibilité du Service pour une durée supérieure à une heure, l'Éditeur s'efforcera d'en informer les Utilisateurs avec un préavis raisonnable par email ou via le tableau de bord.",
+          "L'Éditeur se réserve le droit de faire évoluer le Service, d'ajouter ou de supprimer des fonctionnalités, et de modifier les spécifications techniques, sous réserve que ces modifications n'affectent pas substantiellement la finalité principale du Service telle que décrite au présent article. Toute modification substantielle sera notifiée à l'Utilisateur dans les conditions prévues à l'Article 2."
+        ]
+      },
+      {
+        "title": "Inscription et Compte Utilisateur",
+        "paragraphs": [
+          "L'accès au Service est subordonné à la création préalable d'un Compte Utilisateur. L'inscription est ouverte à toute personne physique majeure ayant la capacité juridique de contracter, ainsi qu'à toute personne morale agissant par l'intermédiaire d'un représentant dûment habilité. Les mineurs ne sont pas autorisés à créer un Compte Utilisateur ni à utiliser le Service.",
+          "Lors de l'inscription, l'Utilisateur s'engage à fournir des informations exactes, complètes et à jour. L'Utilisateur s'engage à mettre à jour ses informations en cas de changement. L'Éditeur ne saurait être tenu responsable des conséquences résultant d'informations erronées ou obsolètes communiquées par l'Utilisateur.",
+          "L'Utilisateur est seul responsable de la confidentialité de ses identifiants de connexion (adresse email et mot de passe). Toute utilisation du Service effectuée à partir du Compte Utilisateur est réputée avoir été effectuée par l'Utilisateur titulaire dudit compte. En cas de suspicion d'utilisation frauduleuse de son compte, l'Utilisateur s'engage à en informer immédiatement l'Éditeur à l'adresse security@obscura.ai.",
+          "L'Éditeur se réserve le droit de suspendre ou de supprimer tout Compte Utilisateur en cas de violation des présentes CGU, d'utilisation frauduleuse ou abusive du Service, ou de fourniture d'informations manifestement inexactes lors de l'inscription, après notification préalable à l'Utilisateur sauf en cas d'urgence ou de violation grave.",
+          "L'inscription via des services d'authentification tiers (Google, GitHub) est soumise aux conditions d'utilisation desdits services. L'Éditeur ne saurait être tenu responsable des dysfonctionnements liés à ces services d'authentification tiers.",
+          "En s'inscrivant via un service d'authentification tiers (Google, GitHub), l'Utilisateur reconnaît et accepte de manière expresse et sans réserve l'intégralité des présentes Conditions Générales d'Utilisation ainsi que la Politique de Confidentialité, au même titre que s'il avait coché la case d'acceptation prévue lors de l'inscription par email. L'acte d'authentification via ces services vaut consentement éclairé aux présentes CGU et à la Politique de Confidentialité."
+        ]
+      },
+      {
+        "title": "Abonnement, tarifs et modalités de paiement",
+        "paragraphs": [
+          "L'utilisation du Service est soumise à la souscription d'un abonnement payant. L'Éditeur propose les formules d'abonnement suivantes : (a) Abonnement mensuel au tarif de 4,90€ toutes taxes comprises par mois, sans durée minimale d'engagement, renouvelable par tacite reconduction chaque mois ; (b) Abonnement annuel au tarif de 47,40€ toutes taxes comprises par an (soit 3,95€ TTC par mois), renouvelable par tacite reconduction chaque année.",
+          "Les prix sont indiqués en euros toutes taxes comprises (TTC), incluant la TVA applicable au taux en vigueur au jour de la facturation. L'Éditeur se réserve le droit de modifier ses tarifs à tout moment. Toute modification tarifaire sera notifiée à l'Utilisateur par email au moins trente (30) jours avant son entrée en vigueur. L'Utilisateur qui n'accepterait pas la modification tarifaire dispose de la faculté de résilier son abonnement avant l'entrée en vigueur du nouveau tarif, conformément aux dispositions de l'Article 9.",
+          "Le paiement est effectué par carte bancaire via la plateforme sécurisée de traitement des paiements Stripe, Inc. L'Éditeur ne collecte, ne stocke ni n'a accès aux informations bancaires de l'Utilisateur à aucun moment. Le traitement des données de paiement est soumis aux conditions d'utilisation et à la politique de confidentialité de Stripe, Inc. que l'Utilisateur est invité à consulter.",
+          "Le paiement est exigible à la date de souscription de l'abonnement et, pour les renouvellements, à chaque date anniversaire de la souscription. En cas d'échec du paiement, l'Éditeur se réserve le droit de suspendre l'accès au Service après un délai de grâce de sept (7) jours et deux tentatives de prélèvement infructueuses. L'Utilisateur sera notifié par email de chaque tentative de prélèvement échouée.",
+          "Conformément à l'article L221-28 du Code de la consommation, l'Utilisateur consommateur reconnaît que le droit de rétractation de quatorze (14) jours ne s'applique pas aux contrats de fourniture de contenu numérique non fourni sur un support matériel dont l'exécution a commencé avec l'accord du consommateur. En souscrivant à l'abonnement et en accédant immédiatement au Service, l'Utilisateur renonce expressément à son droit de rétractation.",
+          "L'Éditeur s'engage à fournir à l'Utilisateur une facture électronique pour chaque paiement. Les factures sont accessibles depuis le tableau de bord de l'Utilisateur et sont envoyées par email à l'adresse associée au Compte Utilisateur."
+        ]
+      },
+      {
+        "title": "Obligations de l'Utilisateur",
+        "paragraphs": [
+          "L'Utilisateur s'engage à utiliser le Service conformément à sa destination, aux présentes CGU et à la législation en vigueur. L'Utilisateur reconnaît que le Service est un outil technique d'anonymisation et ne constitue en aucun cas un conseil juridique en matière de protection des données personnelles.",
+          "Il est strictement interdit à l'Utilisateur de : (a) utiliser le Service à des fins illicites, frauduleuses ou portant atteinte aux droits de tiers ; (b) tenter d'accéder de manière non autorisée aux systèmes informatiques de l'Éditeur, aux comptes d'autres utilisateurs ou à toute ressource du Service à laquelle l'Utilisateur n'a pas été expressément autorisé à accéder ; (c) procéder à toute opération de rétro-ingénierie, décompilation, désassemblage ou tentative de découverte du code source du Service ou de ses composants ; (d) contourner, désactiver ou interférer avec les mécanismes de sécurité ou de protection du Service.",
+          "Il est également interdit à l'Utilisateur de : (e) utiliser le Service pour transmettre des contenus constituant une incitation à la haine, à la violence, à la discrimination, ou tout contenu manifestement illicite ; (f) utiliser des robots, scripts, spiders ou tout autre dispositif automatisé pour accéder au Service ou extraire des données du Service sans autorisation préalable écrite de l'Éditeur ; (g) surcharger intentionnellement l'infrastructure du Service par des requêtes abusives ou des attaques par déni de service ; (h) revendre, sous-licencier ou mettre à disposition de tiers l'accès au Service sans autorisation préalable écrite de l'Éditeur.",
+          "L'Utilisateur est seul responsable du Contenu Utilisateur qu'il transmet via le Service. L'Utilisateur garantit disposer de tous les droits nécessaires sur le Contenu Utilisateur et s'engage à ne pas transmettre de contenu portant atteinte aux droits de propriété intellectuelle de tiers.",
+          "En cas de manquement de l'Utilisateur à l'une quelconque des obligations prévues au présent article, l'Éditeur se réserve le droit de suspendre ou résilier le Compte Utilisateur dans les conditions prévues à l'Article 9, sans préjudice de tout dommage et intérêt que l'Éditeur pourrait réclamer."
+        ]
+      },
+      {
+        "title": "Propriété intellectuelle",
+        "paragraphs": [
+          "L'ensemble des éléments composant le Service (logiciels, algorithmes, codes sources, codes objets, interfaces, textes, graphismes, logos, marques, brevets, bases de données, documentation et tout autre élément protégeable par le droit de la propriété intellectuelle) sont et demeurent la propriété exclusive de l'Éditeur ou de ses concédants de licence. Les présentes CGU ne confèrent à l'Utilisateur aucun droit de propriété intellectuelle sur le Service ou ses composants.",
+          "L'Éditeur concède à l'Utilisateur, pour la durée de son abonnement, un droit d'utilisation personnel, non exclusif, non cessible et non transférable du Service, limité aux fonctionnalités incluses dans la formule d'abonnement souscrite. Ce droit d'utilisation est strictement limité à l'usage du Service conformément à sa destination et aux présentes CGU.",
+          "Toute reproduction, représentation, modification, adaptation, traduction, transformation, diffusion, intégration dans un autre logiciel, exploitation commerciale et/ou réutilisation de quelque manière que ce soit de tout ou partie du Service est strictement interdite sans l'autorisation préalable écrite de l'Éditeur. Toute violation des dispositions du présent article constitue une contrefaçon sanctionnée par les articles L335-2 et suivants du Code de la propriété intellectuelle.",
+          "La marque « Obscura », le logo associé et tout autre signe distinctif présent sur le Service sont des marques déposées de l'Éditeur. Toute reproduction ou utilisation de ces marques sans autorisation préalable écrite de l'Éditeur est strictement interdite.",
+          "L'Utilisateur conserve l'intégralité de ses droits de propriété intellectuelle sur le Contenu Utilisateur. Par la transmission du Contenu Utilisateur via le Service, l'Utilisateur accorde à l'Éditeur une licence limitée, non exclusive et gratuite, aux seules fins du traitement technique nécessaire à la fourniture du Service (anonymisation et désanonymisation)."
+        ]
+      },
+      {
+        "title": "Limitation de responsabilité",
+        "paragraphs": [
+          "Le Service est fourni « en l'état » et « selon disponibilité ». L'Éditeur ne garantit pas que le Service fonctionnera de manière ininterrompue, sécurisée, exempte d'erreurs ou que les résultats obtenus seront exacts ou fiables. L'Éditeur ne garantit pas que le Service détectera l'intégralité des Données Personnelles contenues dans chaque Prompt.",
+          "L'Éditeur ne saurait en aucun cas être tenu responsable : (a) des dommages indirects, accessoires, spéciaux, consécutifs ou punitifs, y compris mais sans s'y limiter la perte de profits, la perte de données, la perte de clientèle, la perte de chiffre d'affaires, même si l'Éditeur a été informé de la possibilité de tels dommages ; (b) de l'utilisation ou de l'impossibilité d'utilisation du Service résultant d'une cause extérieure à l'Éditeur ; (c) des contenus transmis par l'Utilisateur via le Service ou des réponses fournies par les Plateformes Compatibles ; (d) de toute perte ou altération de données résultant d'une défaillance du réseau de télécommunications ou d'un cas de force majeure.",
+          "En tout état de cause, la responsabilité totale de l'Éditeur au titre des présentes CGU, quelle qu'en soit la cause, est limitée au montant total des sommes effectivement versées par l'Utilisateur au cours des douze (12) mois précédant l'événement donnant lieu à responsabilité. Cette limitation de responsabilité s'applique dans toute la mesure permise par la loi applicable.",
+          "L'Éditeur ne saurait être tenu responsable de l'éventuelle non-conformité du Service avec la réglementation applicable à l'activité professionnelle de l'Utilisateur. Il appartient à l'Utilisateur de vérifier que le Service est adapté à ses besoins et conforme aux exigences réglementaires qui lui sont applicables, notamment en matière de protection des données personnelles.",
+          "L'Éditeur ne saurait être tenu pour responsable en cas de force majeure telle que définie par l'article 1218 du Code civil, incluant notamment les catastrophes naturelles, guerres, grèves, pannes électriques généralisées, défaillances des réseaux de télécommunications, attaques informatiques d'ampleur exceptionnelle, décisions gouvernementales ou toute autre circonstance imprévisible, irrésistible et extérieure aux parties.",
+          "L'Utilisateur reconnaît que le Service repose en partie sur des services tiers (hébergement cloud, plateformes d'IA, services de paiement) dont l'Éditeur n'a pas la maîtrise. L'Éditeur ne saurait être tenu responsable des dysfonctionnements, interruptions ou modifications desdits services tiers, ni de leurs conséquences sur la disponibilité ou le fonctionnement du Service."
+        ]
+      },
+      {
+        "title": "Résiliation",
+        "paragraphs": [
+          "L'Utilisateur peut résilier son abonnement à tout moment depuis les paramètres de son Compte Utilisateur ou en contactant le support à l'adresse support@obscura.ai. La résiliation prend effet à la fin de la période d'abonnement en cours (mois ou année selon la formule souscrite). L'Utilisateur conserve l'accès au Service jusqu'à cette date. Aucun remboursement prorata temporis ne sera effectué pour la période restante de l'abonnement en cours.",
+          "L'Éditeur se réserve le droit de résilier l'abonnement de l'Utilisateur et de supprimer son Compte Utilisateur en cas de : (a) violation grave ou répétée des présentes CGU ; (b) utilisation frauduleuse ou abusive du Service ; (c) non-paiement de l'abonnement après expiration du délai de grâce visé à l'Article 5 ; (d) fourniture d'informations manifestement inexactes lors de l'inscription. La résiliation pour les motifs (a) et (b) peut être prononcée avec effet immédiat ; pour les motifs (c) et (d), un préavis de quinze (15) jours sera respecté.",
+          "En cas de résiliation pour quelque motif que ce soit, l'Utilisateur peut demander l'exportation de ses données dans un délai de trente (30) jours suivant la résiliation. Passé ce délai, l'ensemble des données associées au Compte Utilisateur seront définitivement supprimées de nos serveurs, à l'exception des données dont la conservation est imposée par la loi.",
+          "La résiliation de l'abonnement n'emporte pas renonciation par l'une ou l'autre des parties aux droits acquis antérieurement à la résiliation. Les dispositions des présentes CGU qui, par leur nature, ont vocation à survivre à la résiliation (notamment les clauses relatives à la propriété intellectuelle, la limitation de responsabilité et le droit applicable) continueront de produire leurs effets après la résiliation.",
+          "L'Éditeur se réserve le droit d'interrompre définitivement le Service moyennant un préavis de quatre-vingt-dix (90) jours notifié par email à tous les Utilisateurs. Dans ce cas, les abonnements annuels seront remboursés au prorata de la période non consommée."
+        ]
+      },
+      {
+        "title": "Protection des données personnelles",
+        "paragraphs": [
+          "L'Éditeur s'engage à traiter les données personnelles de l'Utilisateur conformément au Règlement (UE) 2016/679 du 27 avril 2016 (RGPD) et à la loi n°78-17 du 6 janvier 1978 modifiée relative à l'informatique, aux fichiers et aux libertés. Les modalités complètes du traitement des données personnelles sont détaillées dans notre Politique de Confidentialité, accessible à l'adresse /$lang/privacy.",
+          "Dans le cadre de la fourniture du Service, l'Éditeur agit en qualité de sous-traitant au sens de l'article 28 du RGPD pour le traitement d'anonymisation des Données Personnelles contenues dans les Prompts de l'Utilisateur. L'Utilisateur, en tant que responsable du traitement, garantit disposer des bases légales nécessaires au traitement des Données Personnelles de tiers qu'il soumet via le Service.",
+          "L'Éditeur s'engage à ne conserver aucune Donnée Personnelle issue des Prompts de l'Utilisateur au-delà de la durée strictement nécessaire au traitement d'anonymisation et de désanonymisation de chaque session. Les correspondances entre balises et données réelles sont stockées en mémoire vive (RAM) et automatiquement supprimées à la fin de chaque session utilisateur.",
+          "Les données du Compte Utilisateur (email, nom, statistiques d'utilisation agrégées) sont hébergées sur des serveurs situés en France, au sein de l'Union Européenne. Aucun transfert de données personnelles n'est effectué vers un pays tiers ne bénéficiant pas d'une décision d'adéquation de la Commission européenne, sauf mise en place de garanties appropriées conformément aux articles 46 et 47 du RGPD.",
+          "L'Éditeur met en œuvre les mesures techniques et organisationnelles appropriées pour assurer un niveau de sécurité adapté au risque, conformément à l'article 32 du RGPD, incluant notamment : le chiffrement des données en transit (TLS 1.3) et au repos (AES-256), la pseudonymisation des données de traitement, des procédures de sauvegarde et de récupération, des tests réguliers d'efficacité des mesures de sécurité.",
+          "Conformément aux articles 15 à 22 du RGPD, l'Utilisateur dispose des droits d'accès, de rectification, d'effacement, de limitation du traitement, de portabilité des données et d'opposition. L'Utilisateur peut exercer ses droits en contactant le Délégué à la Protection des Données à l'adresse privacy@obscura.ai. L'Éditeur s'engage à répondre à toute demande dans un délai maximum de trente (30) jours. L'Utilisateur dispose également du droit d'introduire une réclamation auprès de la Commission Nationale de l'Informatique et des Libertés (CNIL)."
+        ]
+      },
+      {
+        "title": "Garanties et indemnisation",
+        "paragraphs": [
+          "L'Éditeur garantit que le Service sera fourni avec le soin et la diligence raisonnablement attendus d'un professionnel du secteur. Cette garantie ne constitue pas une obligation de résultat mais une obligation de moyens renforcée.",
+          "L'Utilisateur garantit à l'Éditeur : (a) qu'il dispose de la capacité juridique nécessaire pour accepter les présentes CGU et utiliser le Service ; (b) que les informations fournies lors de l'inscription sont exactes et à jour ; (c) qu'il dispose de tous les droits et autorisations nécessaires sur le Contenu Utilisateur ; (d) que son utilisation du Service est conforme à la législation qui lui est applicable.",
+          "L'Utilisateur s'engage à indemniser, défendre et garantir l'Éditeur, ses dirigeants, employés, agents et sous-traitants contre toute réclamation, demande, action, dommage, perte, coût et dépense (y compris les honoraires raisonnables d'avocats) résultant de ou liés à : (a) la violation par l'Utilisateur des présentes CGU ; (b) la violation par l'Utilisateur de tout droit d'un tiers ; (c) l'utilisation du Service par l'Utilisateur d'une manière non conforme aux présentes CGU ou à la loi applicable.",
+          "Les garanties et limitations du présent article s'appliquent dans toute la mesure permise par la loi applicable. Certaines juridictions ne permettant pas l'exclusion ou la limitation de certaines garanties, ces exclusions et limitations peuvent ne pas s'appliquer dans leur intégralité dans certains cas."
+        ]
+      },
+      {
+        "title": "Disponibilité et maintenance",
+        "paragraphs": [
+          "L'Éditeur s'efforce de maintenir le Service accessible 24 heures sur 24, 7 jours sur 7, avec un objectif de disponibilité de 99,5% calculé sur une base mensuelle, hors périodes de maintenance programmée et cas de force majeure.",
+          "L'Éditeur se réserve le droit d'interrompre temporairement l'accès au Service pour les besoins de maintenance, de mise à jour ou d'amélioration technique. Les opérations de maintenance programmée seront, dans la mesure du possible, effectuées pendant les heures creuses (entre 2h00 et 6h00, heure de Paris) et notifiées à l'avance via le tableau de bord utilisateur.",
+          "En cas d'interruption non programmée du Service d'une durée supérieure à vingt-quatre (24) heures consécutives, l'Éditeur s'engage à en informer les Utilisateurs par email et à mettre en œuvre tous les moyens raisonnables pour rétablir le Service dans les meilleurs délais.",
+          "L'Éditeur ne saurait être tenu responsable des interruptions du Service résultant : (a) d'une défaillance du réseau Internet ou des opérateurs de télécommunications ; (b) d'une défaillance des services d'hébergement ou d'infrastructure cloud tiers ; (c) d'une attaque informatique de type déni de service distribué (DDoS) ou autre ; (d) d'un cas de force majeure au sens de l'Article 8.",
+          "L'Utilisateur reconnaît que le Service repose sur une infrastructure technique complexe et accepte que des interruptions ponctuelles puissent survenir. L'Utilisateur s'engage à ne réclamer aucune indemnité pour les interruptions du Service conformes aux dispositions du présent article."
+        ]
+      },
+      {
+        "title": "Confidentialité et secret professionnel",
+        "paragraphs": [
+          "Chaque partie s'engage à traiter comme confidentielles toutes les informations, données et documents de l'autre partie dont elle pourrait avoir connaissance dans le cadre de l'exécution des présentes CGU, et à ne pas les divulguer à des tiers sans l'accord préalable écrit de l'autre partie.",
+          "L'Éditeur s'engage au plus strict secret professionnel concernant le Contenu Utilisateur transitant par le Service. Aucun employé, sous-traitant ou prestataire de l'Éditeur n'est autorisé à accéder au contenu des Prompts des Utilisateurs, sauf en cas de nécessité technique absolue pour le diagnostic d'un dysfonctionnement, et uniquement avec l'accord préalable de l'Utilisateur concerné.",
+          "L'obligation de confidentialité ne s'applique pas aux informations : (a) qui sont ou deviennent publiques sans faute de la partie réceptrice ; (b) qui étaient déjà connues de la partie réceptrice avant leur communication ; (c) qui sont reçues d'un tiers de manière licite et sans obligation de confidentialité ; (d) dont la divulgation est requise par la loi, une autorité judiciaire ou administrative compétente.",
+          "Les obligations de confidentialité prévues au présent article survivent à la résiliation des présentes CGU pour une durée de cinq (5) ans."
+        ]
+      },
+      {
+        "title": "Dispositions générales",
+        "paragraphs": [
+          "Les présentes CGU constituent l'intégralité de l'accord entre l'Éditeur et l'Utilisateur concernant l'objet des présentes et remplacent toutes les discussions, accords et ententes antérieurs, écrits ou verbaux, relatifs à cet objet.",
+          "Si une disposition des présentes CGU était déclarée nulle, invalide ou inapplicable par une juridiction compétente, les autres dispositions conserveraient leur pleine force et leur plein effet. La disposition nulle sera remplacée par une disposition valide se rapprochant le plus possible de l'intention originelle des parties.",
+          "Le fait que l'Éditeur ne se prévale pas, à un moment donné, d'une des dispositions des présentes CGU ne pourra être interprété comme valant renonciation à se prévaloir ultérieurement de cette disposition.",
+          "L'Utilisateur ne peut céder ou transférer ses droits et obligations au titre des présentes CGU sans le consentement préalable écrit de l'Éditeur. L'Éditeur peut céder librement les présentes CGU ainsi que tout ou partie de ses droits et obligations à tout tiers, notamment en cas de restructuration, fusion ou acquisition.",
+          "Toute notification prévue aux présentes CGU sera valablement effectuée par email à l'adresse associée au Compte Utilisateur pour les notifications à l'Utilisateur, et à legal@obscura.ai pour les notifications à l'Éditeur."
+        ]
+      },
+      {
+        "title": "Droit applicable et juridiction compétente",
+        "paragraphs": [
+          "Les présentes CGU sont régies par et interprétées conformément au droit français, sans égard aux principes de conflits de lois.",
+          "En cas de litige relatif à l'interprétation, l'exécution ou la résiliation des présentes CGU, les parties s'engagent à rechercher préalablement une solution amiable par voie de médiation. La demande de médiation devra être adressée par lettre recommandée avec accusé de réception à l'autre partie. Les parties disposent d'un délai de soixante (60) jours à compter de la réception de la demande de médiation pour parvenir à un accord amiable.",
+          "À défaut de résolution amiable dans le délai susvisé, tout litige sera soumis à la compétence exclusive des tribunaux de Paris, France, nonobstant pluralité de défendeurs ou appel en garantie. Cette clause attributive de compétence ne s'applique pas aux Utilisateurs consommateurs résidant dans l'Union Européenne, qui bénéficient des règles de compétence protectrices prévues par le Règlement (UE) n°1215/2012.",
+          "Conformément à l'article 14 du Règlement (UE) n°524/2013, l'Utilisateur consommateur résidant dans l'Union Européenne est informé qu'il peut recourir à la plateforme de Règlement en Ligne des Litiges (RLL) mise en place par la Commission européenne, accessible à l'adresse https://ec.europa.eu/consumers/odr.",
+          "Les présentes CGU sont rédigées en langue française. En cas de traduction en une autre langue, seule la version française fera foi en cas de litige ou de divergence d'interprétation."
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "description": "Chez Obscura, la protection de vos données personnelles est au cœur de notre mission. Voici comment nous traitons vos informations.",
+    "lastUpdated": "Dernière mise à jour : 12 juin 2026",
+    "dataCollected": {
+      "title": "Données collectées",
+      "content": "Nous collectons uniquement les données nécessaires au fonctionnement du service :",
+      "item1": "Adresse email (création de compte et communication)",
+      "item2": "Nom (personnalisation de l'expérience)",
+      "item3": "Statistiques d'utilisation anonymisées (nombre de prompts protégés)",
+      "item4": "Données de paiement traitées exclusivement par Stripe (nous ne stockons aucune information bancaire)"
+    },
+    "dataUsage": {
+      "title": "Utilisation des données",
+      "content": "Vos données sont utilisées exclusivement pour :",
+      "item1": "Fournir et améliorer le service d'anonymisation",
+      "item2": "Gérer votre compte et votre abonnement",
+      "item3": "Vous contacter en cas de mise à jour importante du service"
+    },
+    "anonymization": {
+      "title": "Traitement des prompts",
+      "content": "Notre engagement fondamental : vos données sensibles ne sont jamais stockées ni transmises aux IA.",
+      "item1": "L'anonymisation s'effectue en temps réel — aucun prompt n'est conservé après traitement",
+      "item2": "Les correspondances (balise → donnée réelle) sont stockées temporairement en mémoire et supprimées à la fin de la session",
+      "item3": "Aucune donnée personnelle identifiable n'est jamais envoyée aux modèles d'IA tiers"
+    },
+    "storage": {
+      "title": "Hébergement et sécurité",
+      "content": "Nous appliquons les standards les plus stricts en matière de sécurité des données :",
+      "item1": "Serveurs hébergés en Union Européenne (France)",
+      "item2": "Chiffrement des données en transit (TLS 1.3) et au repos (AES-256)",
+      "item3": "Conformité RGPD — aucun transfert de données hors UE"
+    },
+    "rights": {
+      "title": "Vos droits",
+      "content": "Conformément au RGPD, vous disposez des droits suivants :",
+      "item1": "Droit d'accès : obtenir une copie de vos données personnelles",
+      "item2": "Droit de rectification : corriger vos informations",
+      "item3": "Droit à l'effacement : supprimer votre compte et toutes vos données",
+      "item4": "Droit à la portabilité : exporter vos données dans un format standard"
+    },
+    "contact": {
+      "title": "Nous contacter",
+      "content": "Pour toute question relative à la protection de vos données ou pour exercer vos droits, contactez-nous à privacy@obscura.ai. Nous nous engageons à répondre dans un délai de 30 jours."
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "description": "Une question, une suggestion ou besoin d'aide ? Envoyez-nous un message et nous vous répondrons dans les plus brefs délais.",
+    "name": "Nom",
+    "namePlaceholder": "Votre nom",
+    "email": "Email",
+    "emailPlaceholder": "vous@exemple.com",
+    "message": "Message",
+    "messagePlaceholder": "Décrivez votre demande...",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.",
+    "errorGeneric": "Une erreur est survenue. Veuillez réessayer.",
+    "info": {
+      "title": "Autres moyens de nous contacter",
+      "emailLabel": "Email direct",
+      "responseTime": "Temps de réponse",
+      "responseValue": "Sous 24h en jours ouvrés"
+    }
+  }
+}

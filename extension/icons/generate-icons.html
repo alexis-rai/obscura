@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head><title>Generate Obscura AI Icons</title></head>
+<body>
+<p>Open this file in a browser, right-click each canvas and "Save image as" to get your PNG icons.</p>
+<canvas id="c16" width="16" height="16"></canvas>
+<canvas id="c48" width="48" height="48"></canvas>
+<canvas id="c128" width="128" height="128"></canvas>
+<script>
+function drawIcon(canvas) {
+  const ctx = canvas.getContext("2d");
+  const s = canvas.width;
+  const p = s * 0.1;
+
+  // Background
+  const grad = ctx.createLinearGradient(0, 0, s, s);
+  grad.addColorStop(0, "#1a1a2e");
+  grad.addColorStop(1, "#16213e");
+  ctx.fillStyle = grad;
+  ctx.beginPath();
+  ctx.roundRect(0, 0, s, s, s * 0.2);
+  ctx.fill();
+
+  // Shield shape
+  const cx = s / 2;
+  const top = s * 0.15;
+  const bot = s * 0.85;
+  const w = s * 0.35;
+
+  ctx.beginPath();
+  ctx.moveTo(cx, top);
+  ctx.quadraticCurveTo(cx + w, top + s * 0.05, cx + w, s * 0.45);
+  ctx.quadraticCurveTo(cx + w * 0.8, s * 0.7, cx, bot);
+  ctx.quadraticCurveTo(cx - w * 0.8, s * 0.7, cx - w, s * 0.45);
+  ctx.quadraticCurveTo(cx - w, top + s * 0.05, cx, top);
+  ctx.closePath();
+
+  const shieldGrad = ctx.createLinearGradient(cx - w, top, cx + w, bot);
+  shieldGrad.addColorStop(0, "#6366f1");
+  shieldGrad.addColorStop(1, "#818cf8");
+  ctx.fillStyle = shieldGrad;
+  ctx.fill();
+
+  // Lock icon in center
+  ctx.strokeStyle = "white";
+  ctx.lineWidth = Math.max(1, s * 0.04);
+  ctx.lineCap = "round";
+
+  const lockW = s * 0.18;
+  const lockH = s * 0.14;
+  const lockX = cx - lockW / 2;
+  const lockY = s * 0.48;
+
+  // Lock body
+  ctx.beginPath();
+  ctx.roundRect(lockX, lockY, lockW, lockH, s * 0.02);
+  ctx.stroke();
+
+  // Lock shackle
+  const shackleW = lockW * 0.6;
+  ctx.beginPath();
+  ctx.arc(cx, lockY, shackleW / 2, Math.PI, 0);
+  ctx.stroke();
+}
+
+drawIcon(document.getElementById("c16"));
+drawIcon(document.getElementById("c48"));
+drawIcon(document.getElementById("c128"));
+</script>
+</body>
+</html>

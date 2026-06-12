@@ -1,0 +1,461 @@
+{
+  "common": {
+    "getStarted": "Get Started",
+    "login": "Sign In",
+    "logout": "Sign Out",
+    "dashboard": "Dashboard",
+    "howItWorks": "How it works",
+    "pricing": "Pricing",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact",
+    "loading": "Loading...",
+    "save": "Save",
+    "saving": "Saving...",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "deleting": "Deleting...",
+    "or": "or"
+  },
+  "hero": {
+    "badge": "Stop sharing your data",
+    "title": "Harness the power of AI",
+    "titleHighlight": "without giving away your private data.",
+    "description": "Obscura intercepts your prompts before sending, automatically masks emails, names, numbers and confidential data, then restores everything in the response — seamlessly.",
+    "installExtension": "Install extension",
+    "tryNow": "Try now"
+  },
+  "demo": {
+    "youType": "You type",
+    "aiReceives": "AI receives",
+    "protectedBy": "chat.openai.com — protected by Obscura",
+    "prompt": "Send a recap to",
+    "prompt2": "about the project of"
+  },
+  "trust": {
+    "encryption": "End-to-end encryption",
+    "servers": "European servers",
+    "gdpr": "GDPR compliant",
+    "multiModel": "Multi-model AI"
+  },
+  "howItWorks": {
+    "badge": "How it works",
+    "title": "An invisible shield in two steps",
+    "description": "The extension acts before and after each request. You see nothing — except the green border confirming protection.",
+    "step1Badge": "Outbound",
+    "step1Title": "Instant anonymization",
+    "step1Text": "As soon as you click Send, the extension intercepts the prompt. A secure API request replaces each sensitive piece of data with a tag — [EMAIL_1], [NAME_1], [PHONE_1] — then injects the masked text into the AI with the mention [SHIELD_PROCESSED].",
+    "step2Badge": "Inbound",
+    "step2Title": "Seamless restoration",
+    "step2Text": "While the AI responds in streaming, a MutationObserver with debounce analyzes each block. Our API restores the real data on screen — even if the AI didn't repeat the exact tag. The message is locked in data-shield-state=\"done\".",
+    "restoredResponse": "AI response, restored:",
+    "restoredText": "\"Hello, I've prepared the summary for",
+    "restoredText2": "regarding the file of",
+    "greenBorder": "Green border: your prompt was encrypted, processed and restored locally."
+  },
+  "features": {
+    "latencyTitle": "Latency < 80ms",
+    "latencyText": "Users perceive no delay between typing and sending.",
+    "piiTitle": "12+ PII types",
+    "piiText": "Emails, names, phones, IBANs, addresses, social security numbers, internal IDs.",
+    "auditTitle": "Full audit",
+    "auditText": "Every interception is logged for your DPOs and compliance teams."
+  },
+  "pricing": {
+    "badge": "Pricing",
+    "title": "Simple pricing, no commitment",
+    "description": "Activate or deactivate anytime. No hidden fees.",
+    "monthly": "Monthly",
+    "annually": "Yearly · -20%",
+    "perMonth": "/month incl. tax",
+    "billedMonthly": "Billed monthly · No commitment",
+    "billedAnnually": "€47.40 billed annually · Save €11.40/year",
+    "subscribeMonthly": "Subscribe — €4.90/month",
+    "subscribeAnnually": "Subscribe — €47.40/year",
+    "securePayment": "Secure payment via Stripe · Cancel anytime",
+    "features": {
+      "unlimited": "Unlimited Chrome extension",
+      "realtime": "Real-time anonymization on ChatGPT, Gemini, Claude",
+      "autoRestore": "Automatic response restoration",
+      "dashboard": "Dashboard & statistics"
+    }
+  },
+  "footer": {
+    "tagline": "Protect your prompts, keep control."
+  },
+  "auth": {
+    "welcomeBack": "Welcome back",
+    "createAccount": "Create account",
+    "activateShield": "Activate your shield",
+    "loginDescription": "Sign in to your Obscura dashboard",
+    "signupDescription": "A few seconds to secure your AI prompts",
+    "checkoutDescription": "Last step: confirm your subscription at €4.90 incl. tax",
+    "continueGoogle": "Continue with Google",
+    "continueGithub": "Continue with GitHub",
+    "connecting": "Connecting...",
+    "email": "Email",
+    "emailPlaceholder": "you@company.com",
+    "password": "Password",
+    "passwordPlaceholder": "••••••••",
+    "signIn": "Sign in",
+    "continue": "Continue",
+    "pleaseWait": "Please wait...",
+    "noAccount": "Don't have an account? Sign up",
+    "hasAccount": "Already registered? Sign in",
+    "verifyEmail": "Verify your email",
+    "otpDescription": "We sent a 6-digit code to {{email}}",
+    "verifyCode": "Verify",
+    "resendCode": "Resend code",
+    "invalidCode": "Invalid code. Please try again.",
+    "checkEmail": "Check your email to confirm your account.",
+    "checkEmailDescription": "We sent a confirmation link to {{email}}",
+    "checkEmailInstruction": "Click the link in the email to confirm your address and activate your account.",
+    "emailConfirmed": "Email address verified",
+    "emailConfirmedDescription": "Your email address has been verified. Your account is active.",
+    "goToDashboard": "Go to dashboard",
+    "invalidCredentials": "Invalid credentials.",
+    "googleFailed": "Google sign-in failed",
+    "githubFailed": "GitHub sign-in failed",
+    "noAccountOAuth": "No account is linked to this address. Please sign up first.",
+    "goToSignup": "Create an account",
+    "activateSubscription": "Activate my subscription",
+    "processing": "Processing...",
+    "acceptTerms": "I accept the <terms>Terms of Service</terms> and the <privacy>Privacy Policy</privacy>",
+    "oauthAcceptTerms": "By continuing with Google or GitHub, you automatically accept the <terms>Terms of Service</terms> and the <privacy>Privacy Policy</privacy>.",
+    "simulatedPayment": "Simulated payment · No card required in demo"
+  },
+  "dashboard": {
+    "hello": "Hello",
+    "title": "Dashboard",
+    "activeSubscriber": "Active",
+    "inactiveSubscription": "Inactive subscription · Activate",
+    "loadingProfile": "Loading your profile...",
+    "serverStatus": {
+      "title": "Server status",
+      "subtitle": "Anonymization API",
+      "availability": "Availability",
+      "latency": "Average latency",
+      "region": "Region",
+      "regionValue": "Paris (EU)",
+      "status": "Status",
+      "operational": "Operational"
+    },
+    "stats": {
+      "securedPrompts": "Secured prompts",
+      "thisWeek": "this week",
+      "piiIntercepted": "PII data intercepted",
+      "piiTypes": "emails, names, phones...",
+      "avgMasking": "Average response time",
+      "invisible": "invisible to user",
+      "extensionEncrypts": "Chrome Extension",
+      "extensionSub": "encryptions via extension",
+      "protectionChart": "Protection curve",
+      "promptsProtected": "data encrypted",
+      "dataEncrypted": "data encrypted",
+      "week": "Week",
+      "month": "Month",
+      "prompts": "prompts"
+    },
+    "days": {
+      "sun": "Sun",
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat"
+    },
+    "months": {
+      "jan": "Jan",
+      "feb": "Feb",
+      "mar": "Mar",
+      "apr": "Apr",
+      "may": "May",
+      "jun": "Jun",
+      "jul": "Jul",
+      "aug": "Aug",
+      "sep": "Sep",
+      "oct": "Oct",
+      "nov": "Nov",
+      "dec": "Dec"
+    },
+    "settings": {
+      "title": "Account settings",
+      "fullName": "Full name",
+      "fullNamePlaceholder": "Your name",
+      "savedSuccess": "Changes saved",
+      "emailConfirmation": "A confirmation email has been sent to your new address",
+      "emailError": "Error changing email",
+      "passwordSection": "Change password",
+      "currentPassword": "Current password",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm new password",
+      "changePassword": "Change password",
+      "passwordSuccess": "Password changed successfully",
+      "passwordError": "Error changing password",
+      "passwordMismatch": "Passwords do not match",
+      "passwordTooShort": "Password must be at least 6 characters",
+      "deleteAccount": "Delete account",
+      "deleteWarning": "This action is irreversible. All your data will be deleted.",
+      "deleteButton": "Delete my account"
+    },
+    "deleteModal": {
+      "title": "Delete your account?",
+      "description": "This action is irreversible. All your data, statistics and information will be permanently deleted."
+    }
+  },
+  "notFound": {
+    "title": "404",
+    "subtitle": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go home"
+  },
+  "error": {
+    "title": "This page didn't load",
+    "description": "Something went wrong on our end. You can try refreshing or head back home.",
+    "tryAgain": "Try again",
+    "goHome": "Go home"
+  },
+  "admin": {
+    "title": "Administration",
+    "subtitle": "Manage Obscura users",
+    "usersTitle": "Users",
+    "usersCount": "users",
+    "encryptions": "encryptions",
+    "active": "Active",
+    "inactive": "Inactive",
+    "activate": "Activate subscription",
+    "deactivate": "Deactivate subscription",
+    "deleteUser": "Delete user",
+    "deleteModal": {
+      "title": "Delete this user?",
+      "description": "{{email}}'s account will be permanently deleted with all their data."
+    }
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "description": "These Terms of Service (hereinafter \"Terms\", \"ToS\") govern all relationships between Obscura (hereinafter \"the Publisher\", \"We\", \"Our\") and any individual or legal entity (hereinafter \"the User\", \"You\", \"Your\") accessing the Obscura service. By accessing the service or creating an account, you acknowledge having read, understood and accepted without reservation all of these Terms.",
+    "lastUpdated": "Last updated: June 12, 2026",
+    "articles": [
+      {
+        "title": "Definitions",
+        "paragraphs": [
+          "\"Service\" means all functionalities offered by Obscura, including without limitation the Chrome browser extension, the application programming interface (API), the user dashboard, as well as any software, documentation, update or associated patch made available by the Publisher.",
+          "\"Personal Data\" means any information relating to an identified or identifiable natural person, within the meaning of Article 4 of Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 (GDPR), including names, surnames, email addresses, phone numbers, IBAN numbers, postal addresses, social security numbers and any other direct or indirect identifier.",
+          "\"Anonymization\" means the technical process by which Personal Data contained in a prompt is detected, extracted and replaced by pseudonymized tags (such as [EMAIL_1], [NAME_1], [PHONE_1]) before transmission to a third-party artificial intelligence service.",
+          "\"Prompt\" means any text, instruction, question or command entered by the User and intended to be transmitted to an artificial intelligence model via a platform compatible with the Service.",
+          "\"Compatible Platform\" means any third-party artificial intelligence service with which the Service is technically compatible at the time of use, including but not limited to ChatGPT (OpenAI), Gemini (Google), Claude (Anthropic) and any other platform that the Publisher may subsequently integrate.",
+          "\"User Account\" means the personal space created by the User upon registration, enabling them to access the Service, manage their subscription and view their usage statistics.",
+          "\"User Content\" means all data, texts, prompts and information transmitted by the User via the Service, excluding Personal Data which is subject to anonymization processing."
+        ]
+      },
+      {
+        "title": "Purpose and scope",
+        "paragraphs": [
+          "The purpose of these Terms is to define the terms and conditions under which the Publisher makes the Obscura Service available to the User, as well as the respective rights and obligations of the parties in connection with the use of said Service.",
+          "These Terms apply to all access to and use of the Service, regardless of the terminal, browser or operating system used. They also apply to any future version of the Service, unless explicitly stated otherwise accompanying said version.",
+          "The Publisher reserves the right to modify these Terms at any time. Modifications will take effect upon publication on the site. The User will be informed of any substantial modification by email to the address associated with their User Account. Continued use of the Service after notification constitutes acceptance of the modified Terms. In case of disagreement with the modifications, the User may terminate their subscription in accordance with Article 9 hereof.",
+          "These Terms prevail over any other general or specific conditions not expressly approved by the Publisher. The fact that the Publisher does not invoke at any given time any of the provisions of these Terms shall not be interpreted as a waiver of the right to invoke any of said provisions at a later date."
+        ]
+      },
+      {
+        "title": "Service description",
+        "paragraphs": [
+          "The Obscura Service is a technical personal data anonymization solution integrated into artificial intelligence platforms as a browser extension. The purpose of the Service is to enable the User to interact with third-party artificial intelligence models without their Personal Data or that of third parties being transmitted to said models.",
+          "The anonymization process operates as follows: (a) when the User submits a Prompt on a Compatible Platform, the extension intercepts said Prompt before transmission; (b) the Prompt is analyzed in real-time by our secure API to identify the Personal Data it contains; (c) each identified piece of Personal Data is replaced by a unique pseudonymized tag; (d) the anonymized Prompt is transmitted to the Compatible Platform; (e) upon receiving the artificial intelligence response, the tags are automatically replaced by the original Personal Data before being displayed to the User.",
+          "The Service also includes: a dashboard allowing the User to view their usage statistics (number of protected prompts, types of data intercepted, activity history); a visual indicator system (green border) confirming the successful processing of each prompt; detection of more than twelve categories of identifiable personal data; a processing time of less than 80 milliseconds under normal usage conditions.",
+          "The Publisher endeavors to ensure the availability of the Service 24 hours a day, 7 days a week, subject to maintenance operations necessary for the proper functioning of the Service. The Publisher shall not be held to an obligation of result regarding the uninterrupted availability of the Service. In case of scheduled maintenance likely to affect the availability of the Service for a period exceeding one hour, the Publisher will endeavor to inform Users with reasonable advance notice by email or via the dashboard.",
+          "The Publisher reserves the right to develop the Service, add or remove features, and modify technical specifications, provided that these modifications do not substantially affect the primary purpose of the Service as described in this Article. Any substantial modification will be notified to the User under the conditions set out in Article 2."
+        ]
+      },
+      {
+        "title": "Registration and User Account",
+        "paragraphs": [
+          "Access to the Service is subject to prior creation of a User Account. Registration is open to any natural person of legal age with the legal capacity to contract, as well as to any legal entity acting through a duly authorized representative. Minors are not authorized to create a User Account or use the Service.",
+          "During registration, the User undertakes to provide accurate, complete and up-to-date information. The User undertakes to update their information in case of change. The Publisher cannot be held responsible for consequences resulting from inaccurate or outdated information provided by the User.",
+          "The User is solely responsible for the confidentiality of their login credentials (email address and password). Any use of the Service made from the User Account is presumed to have been made by the User holding said account. In case of suspected fraudulent use of their account, the User undertakes to immediately inform the Publisher at security@obscura.ai.",
+          "The Publisher reserves the right to suspend or delete any User Account in case of violation of these Terms, fraudulent or abusive use of the Service, or provision of manifestly inaccurate information during registration, after prior notification to the User except in cases of emergency or serious violation.",
+          "Registration via third-party authentication services (Google, GitHub) is subject to the terms of use of said services. The Publisher cannot be held responsible for malfunctions related to these third-party authentication services.",
+          "By registering via a third-party authentication service (Google, GitHub), the User expressly and unreservedly acknowledges and accepts these Terms of Service in their entirety, as well as the Privacy Policy, in the same manner as if they had checked the acceptance checkbox provided during email registration. Authentication via these services constitutes informed consent to these Terms of Service and the Privacy Policy."
+        ]
+      },
+      {
+        "title": "Subscription, pricing and payment terms",
+        "paragraphs": [
+          "Use of the Service is subject to a paid subscription. The Publisher offers the following subscription plans: (a) Monthly subscription at the rate of €4.90 including all taxes per month, with no minimum commitment period, automatically renewable each month; (b) Annual subscription at the rate of €47.40 including all taxes per year (i.e. €3.95 incl. tax per month), automatically renewable each year.",
+          "Prices are indicated in euros including all taxes (incl. VAT), including VAT applicable at the rate in force on the date of billing. The Publisher reserves the right to modify its prices at any time. Any price modification will be notified to the User by email at least thirty (30) days before its effective date. A User who does not accept the price modification may terminate their subscription before the new price takes effect, in accordance with Article 9.",
+          "Payment is made by bank card via the secure payment processing platform Stripe, Inc. The Publisher does not collect, store or have access to the User's banking information at any time. The processing of payment data is subject to the terms of use and privacy policy of Stripe, Inc. which the User is invited to consult.",
+          "Payment is due on the date of subscription and, for renewals, on each anniversary of the subscription date. In case of payment failure, the Publisher reserves the right to suspend access to the Service after a grace period of seven (7) days and two unsuccessful debit attempts. The User will be notified by email of each failed debit attempt.",
+          "In accordance with Article L221-28 of the French Consumer Code, the consumer User acknowledges that the fourteen (14) day right of withdrawal does not apply to contracts for the supply of digital content not supplied on a tangible medium whose execution has begun with the consumer's agreement. By subscribing and immediately accessing the Service, the User expressly waives their right of withdrawal.",
+          "The Publisher undertakes to provide the User with an electronic invoice for each payment. Invoices are accessible from the User's dashboard and are sent by email to the address associated with the User Account."
+        ]
+      },
+      {
+        "title": "User obligations",
+        "paragraphs": [
+          "The User undertakes to use the Service in accordance with its intended purpose, these Terms and applicable legislation. The User acknowledges that the Service is a technical anonymization tool and does not in any way constitute legal advice on personal data protection.",
+          "The User is strictly prohibited from: (a) using the Service for unlawful, fraudulent purposes or in a manner that infringes the rights of third parties; (b) attempting unauthorized access to the Publisher's computer systems, other users' accounts or any Service resource to which the User has not been expressly authorized to access; (c) carrying out any reverse engineering, decompilation, disassembly or attempt to discover the source code of the Service or its components; (d) circumventing, disabling or interfering with the security or protection mechanisms of the Service.",
+          "The User is also prohibited from: (e) using the Service to transmit content constituting incitement to hatred, violence, discrimination, or any manifestly unlawful content; (f) using robots, scripts, spiders or any other automated device to access the Service or extract data from the Service without prior written authorization from the Publisher; (g) intentionally overloading the Service's infrastructure through abusive requests or denial-of-service attacks; (h) reselling, sublicensing or making access to the Service available to third parties without prior written authorization from the Publisher.",
+          "The User is solely responsible for the User Content they transmit via the Service. The User warrants that they hold all necessary rights to the User Content and undertakes not to transmit content infringing the intellectual property rights of third parties.",
+          "In case of breach by the User of any of the obligations set out in this Article, the Publisher reserves the right to suspend or terminate the User Account under the conditions set out in Article 9, without prejudice to any damages that the Publisher may claim."
+        ]
+      },
+      {
+        "title": "Intellectual property",
+        "paragraphs": [
+          "All elements composing the Service (software, algorithms, source codes, object codes, interfaces, texts, graphics, logos, trademarks, patents, databases, documentation and any other element protectable by intellectual property law) are and remain the exclusive property of the Publisher or its licensors. These Terms do not confer on the User any intellectual property rights over the Service or its components.",
+          "The Publisher grants the User, for the duration of their subscription, a personal, non-exclusive, non-assignable and non-transferable right to use the Service, limited to the features included in the subscribed plan. This right of use is strictly limited to the use of the Service in accordance with its intended purpose and these Terms.",
+          "Any reproduction, representation, modification, adaptation, translation, transformation, dissemination, integration into other software, commercial exploitation and/or reuse in any manner whatsoever of all or part of the Service is strictly prohibited without prior written authorization from the Publisher. Any violation of the provisions of this Article constitutes infringement punishable under Articles L335-2 et seq. of the French Intellectual Property Code.",
+          "The trademark \"Obscura\", the associated logo and any other distinctive sign present on the Service are registered trademarks of the Publisher. Any reproduction or use of these trademarks without prior written authorization from the Publisher is strictly prohibited.",
+          "The User retains all their intellectual property rights over User Content. By transmitting User Content via the Service, the User grants the Publisher a limited, non-exclusive and free license, solely for the technical processing necessary for the provision of the Service (anonymization and de-anonymization)."
+        ]
+      },
+      {
+        "title": "Limitation of liability",
+        "paragraphs": [
+          "The Service is provided \"as is\" and \"as available\". The Publisher does not warrant that the Service will operate in an uninterrupted, secure, error-free manner or that the results obtained will be accurate or reliable. The Publisher does not warrant that the Service will detect all Personal Data contained in each Prompt.",
+          "The Publisher shall under no circumstances be held liable for: (a) indirect, incidental, special, consequential or punitive damages, including but not limited to loss of profits, loss of data, loss of customers, loss of revenue, even if the Publisher has been informed of the possibility of such damages; (b) the use or inability to use the Service resulting from a cause external to the Publisher; (c) content transmitted by the User via the Service or responses provided by Compatible Platforms; (d) any loss or alteration of data resulting from a telecommunications network failure or force majeure.",
+          "In any event, the total liability of the Publisher under these Terms, regardless of the cause, is limited to the total amount actually paid by the User during the twelve (12) months preceding the event giving rise to liability. This limitation of liability applies to the fullest extent permitted by applicable law.",
+          "The Publisher cannot be held responsible for any non-compliance of the Service with regulations applicable to the User's professional activity. It is the User's responsibility to verify that the Service is suitable for their needs and complies with the regulatory requirements applicable to them, particularly regarding personal data protection.",
+          "The Publisher cannot be held liable in cases of force majeure as defined by Article 1218 of the French Civil Code, including but not limited to natural disasters, wars, strikes, widespread power outages, telecommunications network failures, exceptional-scale computer attacks, government decisions or any other unforeseeable, irresistible and external circumstance.",
+          "The User acknowledges that the Service relies in part on third-party services (cloud hosting, AI platforms, payment services) over which the Publisher has no control. The Publisher cannot be held responsible for malfunctions, interruptions or modifications of said third-party services, nor for their consequences on the availability or operation of the Service."
+        ]
+      },
+      {
+        "title": "Termination",
+        "paragraphs": [
+          "The User may terminate their subscription at any time from their User Account settings or by contacting support at support@obscura.ai. Termination takes effect at the end of the current subscription period (month or year depending on the plan). The User retains access to the Service until that date. No pro rata refund will be made for the remaining period of the current subscription.",
+          "The Publisher reserves the right to terminate the User's subscription and delete their User Account in case of: (a) serious or repeated violation of these Terms; (b) fraudulent or abusive use of the Service; (c) non-payment of the subscription after expiration of the grace period referred to in Article 5; (d) provision of manifestly inaccurate information during registration. Termination for reasons (a) and (b) may be pronounced with immediate effect; for reasons (c) and (d), fifteen (15) days' notice will be given.",
+          "In case of termination for any reason, the User may request the export of their data within thirty (30) days following termination. After this period, all data associated with the User Account will be permanently deleted from our servers, with the exception of data whose retention is required by law.",
+          "Termination of the subscription does not constitute a waiver by either party of rights acquired prior to termination. Provisions of these Terms which, by their nature, are intended to survive termination (including clauses relating to intellectual property, limitation of liability and applicable law) shall continue to produce their effects after termination.",
+          "The Publisher reserves the right to permanently discontinue the Service with ninety (90) days' notice sent by email to all Users. In this case, annual subscriptions will be refunded pro rata for the unconsumed period."
+        ]
+      },
+      {
+        "title": "Personal data protection",
+        "paragraphs": [
+          "The Publisher undertakes to process the User's personal data in accordance with Regulation (EU) 2016/679 of 27 April 2016 (GDPR) and French Law No. 78-17 of 6 January 1978 as amended relating to information technology, files and freedoms. The full terms of personal data processing are detailed in our Privacy Policy, accessible at /$lang/privacy.",
+          "In the context of providing the Service, the Publisher acts as a processor within the meaning of Article 28 of the GDPR for the anonymization processing of Personal Data contained in the User's Prompts. The User, as data controller, warrants that they have the necessary legal bases for the processing of third-party Personal Data they submit via the Service.",
+          "The Publisher undertakes not to retain any Personal Data from the User's Prompts beyond the time strictly necessary for the anonymization and de-anonymization processing of each session. The mappings between tags and actual data are stored in random-access memory (RAM) and automatically deleted at the end of each user session.",
+          "User Account data (email, name, aggregated usage statistics) is hosted on servers located in France, within the European Union. No transfer of personal data is made to a third country that does not benefit from an adequacy decision of the European Commission, unless appropriate safeguards are put in place in accordance with Articles 46 and 47 of the GDPR.",
+          "The Publisher implements appropriate technical and organizational measures to ensure a level of security appropriate to the risk, in accordance with Article 32 of the GDPR, including: encryption of data in transit (TLS 1.3) and at rest (AES-256), pseudonymization of processing data, backup and recovery procedures, regular testing of the effectiveness of security measures.",
+          "In accordance with Articles 15 to 22 of the GDPR, the User has the rights of access, rectification, erasure, restriction of processing, data portability and objection. The User may exercise their rights by contacting the Data Protection Officer at privacy@obscura.ai. The Publisher undertakes to respond to any request within a maximum of thirty (30) days. The User also has the right to lodge a complaint with the Commission Nationale de l'Informatique et des Libertés (CNIL)."
+        ]
+      },
+      {
+        "title": "Warranties and indemnification",
+        "paragraphs": [
+          "The Publisher warrants that the Service will be provided with the care and diligence reasonably expected of a professional in the sector. This warranty does not constitute an obligation of result but a reinforced obligation of means.",
+          "The User warrants to the Publisher: (a) that they have the legal capacity necessary to accept these Terms and use the Service; (b) that the information provided during registration is accurate and up to date; (c) that they hold all necessary rights and authorizations over User Content; (d) that their use of the Service complies with applicable legislation.",
+          "The User undertakes to indemnify, defend and hold harmless the Publisher, its officers, employees, agents and subcontractors against any claim, demand, action, damage, loss, cost and expense (including reasonable attorney's fees) arising from or related to: (a) the User's violation of these Terms; (b) the User's violation of any right of a third party; (c) the User's use of the Service in a manner not in accordance with these Terms or applicable law.",
+          "The warranties and limitations of this Article apply to the fullest extent permitted by applicable law. Some jurisdictions do not allow the exclusion or limitation of certain warranties; these exclusions and limitations may not apply in their entirety in certain cases."
+        ]
+      },
+      {
+        "title": "Availability and maintenance",
+        "paragraphs": [
+          "The Publisher endeavors to maintain the Service accessible 24 hours a day, 7 days a week, with an availability target of 99.5% calculated on a monthly basis, excluding scheduled maintenance periods and force majeure.",
+          "The Publisher reserves the right to temporarily interrupt access to the Service for maintenance, update or technical improvement purposes. Scheduled maintenance operations will, insofar as possible, be carried out during off-peak hours (between 2:00 AM and 6:00 AM, Paris time) and notified in advance via the user dashboard.",
+          "In case of an unscheduled interruption of the Service lasting more than twenty-four (24) consecutive hours, the Publisher undertakes to inform Users by email and to implement all reasonable means to restore the Service as quickly as possible.",
+          "The Publisher cannot be held responsible for Service interruptions resulting from: (a) Internet network or telecommunications operator failure; (b) third-party hosting or cloud infrastructure service failure; (c) a distributed denial-of-service (DDoS) computer attack or other; (d) a case of force majeure within the meaning of Article 8.",
+          "The User acknowledges that the Service relies on complex technical infrastructure and accepts that occasional interruptions may occur. The User undertakes not to claim any compensation for Service interruptions in accordance with the provisions of this Article."
+        ]
+      },
+      {
+        "title": "Confidentiality and professional secrecy",
+        "paragraphs": [
+          "Each party undertakes to treat as confidential all information, data and documents of the other party of which it may become aware in the course of performing these Terms, and not to disclose them to third parties without the prior written consent of the other party.",
+          "The Publisher undertakes the strictest professional secrecy regarding User Content passing through the Service. No employee, subcontractor or service provider of the Publisher is authorized to access the content of Users' Prompts, except in case of absolute technical necessity for diagnosing a malfunction, and only with the prior consent of the User concerned.",
+          "The obligation of confidentiality does not apply to information: (a) which is or becomes public without fault of the receiving party; (b) which was already known to the receiving party before its communication; (c) which is received from a third party lawfully and without obligation of confidentiality; (d) whose disclosure is required by law, a competent judicial or administrative authority.",
+          "The confidentiality obligations set out in this Article shall survive the termination of these Terms for a period of five (5) years."
+        ]
+      },
+      {
+        "title": "General provisions",
+        "paragraphs": [
+          "These Terms constitute the entire agreement between the Publisher and the User regarding the subject matter hereof and replace all prior discussions, agreements and understandings, written or oral, relating to this subject.",
+          "If any provision of these Terms is declared null, invalid or unenforceable by a competent court, the remaining provisions shall retain their full force and effect. The null provision will be replaced by a valid provision most closely approximating the original intention of the parties.",
+          "The fact that the Publisher does not invoke, at any given time, any of the provisions of these Terms shall not be interpreted as a waiver of the right to invoke said provision at a later date.",
+          "The User may not assign or transfer their rights and obligations under these Terms without the prior written consent of the Publisher. The Publisher may freely assign these Terms as well as all or part of its rights and obligations to any third party, particularly in case of restructuring, merger or acquisition.",
+          "Any notification provided for in these Terms shall be validly made by email to the address associated with the User Account for notifications to the User, and to legal@obscura.ai for notifications to the Publisher."
+        ]
+      },
+      {
+        "title": "Applicable law and jurisdiction",
+        "paragraphs": [
+          "These Terms are governed by and construed in accordance with French law, without regard to conflict of law principles.",
+          "In case of dispute relating to the interpretation, performance or termination of these Terms, the parties undertake to first seek an amicable solution through mediation. The mediation request must be sent by registered letter with acknowledgment of receipt to the other party. The parties have a period of sixty (60) days from receipt of the mediation request to reach an amicable agreement.",
+          "Failing amicable resolution within the above-mentioned period, any dispute shall be submitted to the exclusive jurisdiction of the courts of Paris, France, notwithstanding multiple defendants or warranty claims. This jurisdiction clause does not apply to consumer Users residing in the European Union, who benefit from the protective jurisdiction rules provided by Regulation (EU) No. 1215/2012.",
+          "In accordance with Article 14 of Regulation (EU) No. 524/2013, the consumer User residing in the European Union is informed that they may use the Online Dispute Resolution (ODR) platform established by the European Commission, accessible at https://ec.europa.eu/consumers/odr.",
+          "These Terms are written in French. In case of translation into another language, only the French version shall prevail in case of dispute or divergence of interpretation."
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "At Obscura, protecting your personal data is at the core of our mission. Here's how we handle your information.",
+    "lastUpdated": "Last updated: June 12, 2026",
+    "dataCollected": {
+      "title": "Data collected",
+      "content": "We only collect data necessary for the service to function:",
+      "item1": "Email address (account creation and communication)",
+      "item2": "Name (experience personalization)",
+      "item3": "Anonymized usage statistics (number of protected prompts)",
+      "item4": "Payment data processed exclusively by Stripe (we do not store any banking information)"
+    },
+    "dataUsage": {
+      "title": "Data usage",
+      "content": "Your data is used exclusively for:",
+      "item1": "Providing and improving the anonymization service",
+      "item2": "Managing your account and subscription",
+      "item3": "Contacting you for important service updates"
+    },
+    "anonymization": {
+      "title": "Prompt processing",
+      "content": "Our fundamental commitment: your sensitive data is never stored or transmitted to AI models.",
+      "item1": "Anonymization happens in real-time — no prompt is kept after processing",
+      "item2": "Mappings (tag → real data) are stored temporarily in memory and deleted at the end of the session",
+      "item3": "No personally identifiable data is ever sent to third-party AI models"
+    },
+    "storage": {
+      "title": "Hosting and security",
+      "content": "We apply the strictest standards for data security:",
+      "item1": "Servers hosted in the European Union (France)",
+      "item2": "Data encrypted in transit (TLS 1.3) and at rest (AES-256)",
+      "item3": "GDPR compliant — no data transfers outside the EU"
+    },
+    "rights": {
+      "title": "Your rights",
+      "content": "In accordance with GDPR, you have the following rights:",
+      "item1": "Right of access: obtain a copy of your personal data",
+      "item2": "Right to rectification: correct your information",
+      "item3": "Right to erasure: delete your account and all your data",
+      "item4": "Right to portability: export your data in a standard format"
+    },
+    "contact": {
+      "title": "Contact us",
+      "content": "For any questions regarding the protection of your data or to exercise your rights, contact us at privacy@obscura.ai. We commit to responding within 30 days."
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "description": "Have a question, suggestion or need help? Send us a message and we'll get back to you as soon as possible.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@example.com",
+    "message": "Message",
+    "messagePlaceholder": "Describe your request...",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully! We'll get back to you shortly.",
+    "errorGeneric": "An error occurred. Please try again.",
+    "info": {
+      "title": "Other ways to contact us",
+      "emailLabel": "Direct email",
+      "responseTime": "Response time",
+      "responseValue": "Within 24h on business days"
+    }
+  }
+}

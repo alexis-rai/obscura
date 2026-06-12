@@ -41,7 +41,7 @@ function Hero() {
     <section className="relative overflow-hidden px-6 pt-20 pb-28">
       <div className="pointer-events-none absolute inset-0 [background:var(--gradient-hero)]" />
       <div className="relative mx-auto max-w-5xl text-center">
-        <h1 className="font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
+        <h1 className="font-display text-3xl font-bold leading-[1.05] tracking-tight sm:text-5xl md:text-7xl">
           {t("hero.title")}<br />
           <span className="gradient-text">{t("hero.titleHighlight")}</span>
         </h1>
@@ -141,7 +141,7 @@ function HowItWorks() {
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 lg:grid-cols-2">
+        <div className="mt-16 grid gap-6 md:grid-cols-2">
           <Step
             n="01"
             badge={t("howItWorks.step1Badge")}
@@ -150,8 +150,8 @@ function HowItWorks() {
             title={t("howItWorks.step1Title")}
             text={t("howItWorks.step1Text")}
             example={<>
-              <code className="text-destructive line-through opacity-60">jean.dupont@acme.fr</code>
-              <ArrowRight className="h-3.5 w-3.5 text-muted-foreground" />
+              <code className="text-destructive line-through opacity-60 break-all">jean.dupont@acme.fr</code>
+              <ArrowRight className="h-3.5 w-3.5 shrink-0 text-muted-foreground" />
               <code className="rounded bg-emerald/15 px-2 py-0.5 text-emerald">[EMAIL_1]</code>
             </>}
           />
@@ -164,14 +164,14 @@ function HowItWorks() {
             text={t("howItWorks.step2Text")}
             example={<>
               <code className="rounded bg-emerald/15 px-2 py-0.5 text-emerald">[EMAIL_1]</code>
-              <ArrowRight className="h-3.5 w-3.5 text-muted-foreground" />
-              <code className="text-foreground">jean.dupont@acme.fr</code>
-              <CheckCircle className="ml-1 h-3.5 w-3.5 text-emerald" />
+              <ArrowRight className="h-3.5 w-3.5 shrink-0 text-muted-foreground" />
+              <code className="text-foreground break-all">jean.dupont@acme.fr</code>
+              <CheckCircle className="ml-1 h-3.5 w-3.5 shrink-0 text-emerald" />
             </>}
           />
         </div>
 
-        <div className="relative mt-10 rounded-2xl border-2 border-emerald/40 bg-emerald/5 p-6 shadow-[var(--shadow-emerald)]">
+        <div className="relative mt-10 rounded-2xl border-2 border-emerald/40 bg-emerald/5 p-4 shadow-[var(--shadow-emerald)] sm:p-6">
           <div className="absolute -top-3 left-6 rounded-full bg-emerald px-3 py-0.5 text-xs font-bold text-emerald-foreground">
             ✓ data-shield-state="done"
           </div>
@@ -207,7 +207,7 @@ function Step({
       </div>
       <h3 className="mt-6 text-2xl font-semibold">{title}</h3>
       <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{text}</p>
-      <div className="mt-6 flex items-center gap-2 rounded-lg border border-border bg-background/60 px-4 py-3 font-mono text-xs">
+      <div className="mt-6 flex flex-wrap items-center gap-2 rounded-lg border border-border bg-background/60 px-4 py-3 font-mono text-xs">
         {example}
       </div>
     </div>
@@ -258,12 +258,12 @@ function Pricing() {
 
       <div className="mx-auto mt-12 grid max-w-5xl gap-6 md:grid-cols-2">
         {/* Plan Mensuel */}
-        <div className="relative rounded-3xl border border-border bg-surface p-8 shadow-[var(--shadow-elegant)]">
+        <div className="relative rounded-3xl border border-border bg-surface p-6 shadow-[var(--shadow-elegant)] sm:p-8">
           <div className="flex items-center justify-between">
             <span className="rounded-full bg-primary/15 px-3 py-1 text-xs font-semibold text-primary">{t("pricing.monthly")}</span>
           </div>
           <div className="mt-6 flex items-baseline gap-2">
-            <span className="font-display text-6xl font-bold tracking-tight">4,90€</span>
+            <span className="font-display text-5xl font-bold tracking-tight sm:text-6xl">4,90€</span>
             <span className="text-muted-foreground">{t("pricing.perMonth")}</span>
           </div>
           <p className="mt-2 text-sm text-muted-foreground">
@@ -294,12 +294,12 @@ function Pricing() {
         {/* Plan Annuel */}
         <div className="relative">
           <div className="absolute -inset-0.5 rounded-3xl bg-gradient-to-r from-primary to-emerald opacity-60 blur-lg" />
-          <div className="relative rounded-3xl border border-border bg-surface p-8 shadow-[var(--shadow-elegant)]">
+          <div className="relative rounded-3xl border border-border bg-surface p-6 shadow-[var(--shadow-elegant)] sm:p-8">
             <div className="flex items-center justify-between">
               <span className="rounded-full bg-emerald/15 px-3 py-1 text-xs font-semibold text-emerald">{t("pricing.annually")}</span>
             </div>
             <div className="mt-6 flex items-baseline gap-2">
-              <span className="font-display text-6xl font-bold tracking-tight">3,95€</span>
+              <span className="font-display text-5xl font-bold tracking-tight sm:text-6xl">3,95€</span>
               <span className="text-muted-foreground">{t("pricing.perMonth")}</span>
             </div>
             <p className="mt-2 text-sm text-emerald">

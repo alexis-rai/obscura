@@ -1,5 +1,6 @@
 import { Link, useNavigate } from "@tanstack/react-router";
-import { Shield, Crown } from "lucide-react";
+import { Shield, Crown, Menu, X } from "lucide-react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useSession, signOutAll } from "@/lib/auth";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -12,9 +13,11 @@ export function Navbar() {
   const navigate = useNavigate();
   const { t } = useTranslation();
   const lang = useLang();
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   async function handleSignOut() {
     await signOutAll();
+    setMobileOpen(false);
     navigate({ to: "/$lang", params: { lang } });
   }
 
@@ -58,7 +61,7 @@ export function Navbar() {
               </Link>
               <button
                 onClick={handleSignOut}
-                className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+                className="hidden text-sm text-muted-foreground transition-colors hover:text-foreground md:inline"
               >
                 {t("common.logout")}
               </button>
@@ -72,14 +75,92 @@ export function Navbar() {
                 to="/$lang/auth"
                 params={{ lang }}
                 search={{ mode: "signup" }}
-                className="inline-flex items-center rounded-md bg-gradient-to-r from-primary to-emerald px-4 py-2 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-glow)] transition-transform hover:scale-[1.02]"
+                className="hidden items-center rounded-md bg-gradient-to-r from-primary to-emerald px-4 py-2 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-glow)] transition-transform hover:scale-[1.02] md:inline-flex"
               >
                 {t("common.getStarted")}
               </Link>
             </>
           )}
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="grid h-9 w-9 place-items-center rounded-md border border-border text-muted-foreground transition-colors hover:bg-surface-elevated hover:text-foreground md:hidden"
+            aria-label="Menu"
+          >
+            {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          </button>
         </div>
       </div>
+
+      {mobileOpen && (
+        <div className="border-t border-border/60 bg-background/95 backdrop-blur-xl md:hidden">
+          <nav className="mx-auto flex max-w-7xl flex-col gap-1 px-6 py-4">
+            <a
+              href={`/${lang}#how`}
+              onClick={() => setMobileOpen(false)}
+              className="rounded-lg px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground"
+            >
+              {t("common.howItWorks")}
+            </a>
+            <a
+              href={`/${lang}#pricing`}
+              onClick={() => setMobileOpen(false)}
+              className="rounded-lg px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground"
+            >
+              {t("common.pricing")}
+            </a>
+            {user ? (
+              <>
+                {user.email === ADMIN_EMAIL && (
+                  <Link
+                    to="/$lang/admin"
+                    params={{ lang }}
+                    onClick={() => setMobileOpen(false)}
+                    className="flex items-center gap-2 rounded-lg px-3 py-2.5 text-sm font-medium text-amber-400 transition-colors hover:bg-surface"
+                  >
+                    <Crown className="h-3.5 w-3.5" />
+                    Admin
+                  </Link>
+                )}
+                <Link
+                  to="/$lang/dashboard"
+                  params={{ lang }}
+                  onClick={() => setMobileOpen(false)}
+                  className="rounded-lg px-3 py-2.5 text-sm font-medium text-muted-foreground transition-colors hover:bg-surface hover:text-foreground"
+                >
+                  {t("common.dashboard")}
+                </Link>
+                <button
+                  onClick={handleSignOut}
+                  className="rounded-lg px-3 py-2.5 text-left text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground"
+                >
+                  {t("common.logout")}
+                </button>
+              </>
+            ) : (
+              <>
+                <Link
+                  to="/$lang/auth"
+                  params={{ lang }}
+                  search={{ mode: undefined }}
+                  onClick={() => setMobileOpen(false)}
+                  className="rounded-lg px-3 py-2.5 text-sm text-muted-foreground transition-colors hover:bg-surface hover:text-foreground"
+                >
+                  {t("common.login")}
+                </Link>
+                <Link
+                  to="/$lang/auth"
+                  params={{ lang }}
+                  search={{ mode: "signup" }}
+                  onClick={() => setMobileOpen(false)}
+                  className="mt-2 flex items-center justify-center rounded-lg bg-gradient-to-r from-primary to-emerald px-4 py-2.5 text-sm font-semibold text-primary-foreground shadow-[var(--shadow-glow)]"
+                >
+                  {t("common.getStarted")}
+                </Link>
+              </>
+            )}
+          </nav>
+        </div>
+      )}
     </header>
   );
 }

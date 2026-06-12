@@ -146,11 +146,11 @@ function AdminPage() {
                       )}
                     </div>
                     <p className="truncate text-xs text-muted-foreground">{u.email}</p>
-                    <div className="mt-1 flex items-center gap-3 text-xs text-muted-foreground">
+                    <div className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-xs text-muted-foreground">
                       <span>{u.extension_encrypts ?? 0} {t("admin.encryptions")}</span>
-                      <span className="text-border">|</span>
+                      <span className="hidden sm:inline text-border">|</span>
                       <span>{new Date(u.created_at).toLocaleDateString("fr-FR")}</span>
-                      <span className="text-border">|</span>
+                      <span className="hidden sm:inline text-border">|</span>
                       <Popover open={editingEndDate === u.id} onOpenChange={(open) => setEditingEndDate(open ? u.id : null)}>
                         <PopoverTrigger asChild>
                           <button
